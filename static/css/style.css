@@ -1,8 +1,24 @@
 body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
-  background: url("../img/body.png") no-repeat center center fixed;
-  background-size: cover;
+  overflow: hidden; /* Prevent scrolling */
 }
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Ensure the video stays behind the content */
+  background: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
 
 /* ============= css related to chats =============== */
 
